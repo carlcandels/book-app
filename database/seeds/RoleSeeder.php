@@ -21,7 +21,7 @@ class RoleSeeder extends Seeder
         try{
 
             Role::create(['name' => 'superuser']);
-            Role::create(['name' => 'user']);
+            Role::create(['name' => 'normal_user']);
 
             DB::commit();
 
