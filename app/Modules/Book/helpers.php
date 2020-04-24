@@ -1,0 +1,5 @@
+<?php
+
+/**
+ *	Book Helpers
+ */
