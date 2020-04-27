@@ -14,7 +14,7 @@ return [
 
     'generate' => [
         'controller' => true,
-        'resource' => false,
+        'resource' => true,
         'request' => true,
         'model' => true,
         'mail' => false,
@@ -24,7 +24,7 @@ return [
         'observer' => false,
         'job' => false,
         'view' => true,
-        'translation' => true,
+        'translation' => false,
         'routes' => true,
         'migration' => false,
         'seeder' => false,
