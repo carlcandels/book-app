@@ -227,6 +227,11 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        // Application Global Helper
+        'Check' => App\Helpers\Check::class,
+        'Help' => App\Helpers\Help::class,
+        'Get' => App\Helpers\Get::class,
+
     ],
 
 ];
