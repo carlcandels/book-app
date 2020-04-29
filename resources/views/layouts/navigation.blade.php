@@ -12,10 +12,10 @@
             <ul class="navbar-nav mr-auto">
                 @if (!Auth::guest())
                     <li class="nav-item">
-                        <a class="active nav-link" href="#">Books</a>
+                        <a class="{{ (request()->is('books/view')) ? 'active' : '' }} nav-link" href="{{ route('books.view') }}">Books</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('authors.view') }}">Authors</a>
+                        <a class="{{ (request()->is('authors/view')) ? 'active' : '' }} nav-link" href="{{ route('authors.view') }}">Authors</a>
                     </li>
                 @endif
             </ul>

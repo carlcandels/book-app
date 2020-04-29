@@ -48,7 +48,7 @@ class AuthorController extends Controller
 
             DB::rollback();
 
-            return redirect()->back($e->getCode);
+            return redirect()->back();
             session()->flash('failed', 'Oops! Something went wrong. Try again later.');
         }
 
@@ -78,7 +78,7 @@ class AuthorController extends Controller
 
             DB::rollback();
 
-            return redirect()->back($e->getCode);
+            return redirect()->back();
             session()->flash('failed', 'Oops! Something went wrong. Try again later.');
         }
 
@@ -100,7 +100,7 @@ class AuthorController extends Controller
         } catch (\Exception $e) {
             DB::rollback();
 
-            return redirect()->back($e->getCode);
+            return redirect()->back();
             session()->flash('failed', 'Oops! Something went wrong. Try again later.');
         }
         return redirect()->route('authors.view');

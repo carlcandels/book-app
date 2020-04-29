@@ -13,7 +13,7 @@ class Book extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,8 @@ class Book extends FormRequest
     public function rules()
     {
         return [
-            //
+            'title' => 'required|max:255',
+            'published_at' => 'date'
         ];
     }
 }
